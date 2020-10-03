@@ -16,3 +16,15 @@ In some parts of the world, like Norway, the week number is commonly used in sch
 > hvilken --help
 No input will print current week number
 ```
+
+## Contributing
+
+Prerequisites:
+
+- Haskell Stack (https://docs.haskellstack.org/en/stable/README/#how-to-install)
+
+### Run the project
+
+Clone down the project.
+From the root folder run `stack run` to run the project.
+This will build an executable and run the program.
