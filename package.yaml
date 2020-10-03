@@ -21,6 +21,8 @@ description:         Please see the README on GitHub at <https://github.com/cris
 
 dependencies:
 - base >= 4.7 && < 5
+- time
+- process
 
 library:
   source-dirs: src
