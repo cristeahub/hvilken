@@ -21,4 +21,4 @@ main' args = do
   -- TODO: provide date and show week number for date
   -- Ignore for now
   t <- getCurrentTime
-  putStrLn $ weekNumberFromDate t
+  putStrLn $ show $ weekNumberFromDate t

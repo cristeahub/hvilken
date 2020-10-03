@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 14846d0c9a5f1f3379d76ca9db2bbf9329da243d877080ce15ab8a932c84568c
+-- hash: 78e515ee12cc02ed9707e598e79fc91ebf12f13344e6e9cca15122d56202df26
 
 name:           hvilken-lib
 version:        0.1.0.0
@@ -35,7 +35,7 @@ library
   build-depends:
       base >=4.7 && <5
     , process
-    , time
+    , time >=1.9.3
   default-language: Haskell2010
 
 executable hvilken
@@ -49,7 +49,7 @@ executable hvilken
       base >=4.7 && <5
     , hvilken-lib
     , process
-    , time
+    , time >=1.9.3
   default-language: Haskell2010
 
 test-suite hvilken-test
@@ -64,5 +64,5 @@ test-suite hvilken-test
       base >=4.7 && <5
     , hvilken-lib
     , process
-    , time
+    , time >=1.9.3
   default-language: Haskell2010
