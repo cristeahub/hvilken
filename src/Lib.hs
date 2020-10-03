@@ -1,7 +1,9 @@
 module Lib
-  ( someFunc,
+  ( weekNumberFromDate,
   )
 where
 
-someFunc :: String -> IO ()
-someFunc = putStrLn
+import Data.Time
+
+weekNumberFromDate :: UTCTime -> String
+weekNumberFromDate = show . utctDay
