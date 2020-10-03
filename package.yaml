@@ -21,7 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/cris
 
 dependencies:
 - base >= 4.7 && < 5
-- time
+- time >= 1.9.3
 - process
 
 library:
