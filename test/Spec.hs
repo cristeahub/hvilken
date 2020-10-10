@@ -7,4 +7,4 @@ main = hspec $ do
   describe "Prelude.head" $ do
     it "makes sure weekNumberFromDate is less than or equal to 52" $ do
       t <- getCurrentTime
-      weekNumberFromDate t `shouldSatisfy` (<= 52)
+      weekNumberFromDate t `shouldSatisfy` (>= 52)
