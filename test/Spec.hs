@@ -1,10 +1,10 @@
 import Data.Time
 import Lib
+import Test.Hspec
 
 main :: IO ()
-main = do
-  -- quickCheck weekNumberFromDate
-  t <- getCurrentTime
-  putStrLn ""
-  putStrLn $ if weekNumberFromDate t <= 52 then "OK" else "FAIL!"
-  return ()
+main = hspec $ do
+  describe "Prelude.head" $ do
+    it "makes sure weekNumberFromDate is less than or equal to 52" $ do
+      t <- getCurrentTime
+      weekNumberFromDate t `shouldSatisfy` (<= 52)
