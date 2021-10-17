@@ -1,10 +1,8 @@
-cabal-version: 3.0
+cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
---
--- hash: 4727a26f4589841d0226cb64cf900e4eadce3df1ed376cc1fd8a799f59fb5149
 
 name:           hvilken-lib
 version:        0.1.0.0
@@ -14,7 +12,7 @@ bug-reports:    https://github.com/cristeahub/hvilken/issues
 author:         Christoffer Tønnessen
 maintainer:     given@upon.request
 copyright:      2020 Christoffer Tønnessen
-license:        BSD-3-Clause
+license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
