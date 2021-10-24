@@ -21,7 +21,9 @@ No input will print current week number
 
 Prerequisites:
 
-- Haskell Stack (https://docs.haskellstack.org/en/stable/README/#how-to-install)
+- Haskell GHCUP (https://www.haskell.org/ghcup/)
+- Haskell Cabal
+- Haskell Stack
 
 ### Run the project
 

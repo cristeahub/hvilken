@@ -2,6 +2,7 @@ import Data.Time
 import Data.Time.Calendar
 import Lib
 import Test.Hspec
+import RIO
 
 main :: IO ()
 main = hspec $ do
