@@ -4,7 +4,7 @@ name: build and test
 
 jobs:
   runhaskell:
-    name: Run tests
+    name: Test and build for macOS
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
