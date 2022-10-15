@@ -5,10 +5,14 @@ Schools, kindergartens and a lot of other places exclusively use week numbers in
 
 With this CLI you can finally automate your week number needs.
 
-
 ## Installation
 
-To run the CLI you currently need to have swift 5.7 installed.
+The easiest way to use the CLI is to download the latest release from the releases list.
+https://github.com/cristeahub/hvilken/releases
+
+## Building and running from source
+
+To build and run the CLI you currently need to have swift 5.7 installed.
 
 ## Building the executable
 ```zsh
