@@ -26,3 +26,7 @@ jobs:
         with:
           artifacts: "hvilken-${{ matrix.os }}"
           token: ${{ secrets.GITHUB_TOKEN }}
+          replaceArtifacts: false
+          removeArtifacts: false
+          allowUpdates: true
+          artifactErrorsFailBuild: true
