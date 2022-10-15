@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: Release Swift ${{ matrix.swift }} on ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        swift: ["5.7"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: fwal/setup-swift@7c49efc544dba93085c0106072e0576a1f743110
+        with:
+          swift-version: ${{ matrix.swift }}
+      - uses: actions/checkout@v3
+      - name: Build
+        run: |
+          swift build -c release
+          mv .build/release/hvilken hvilken-${{ matrix.os }}
+      - uses: ncipollo/release-action@4c75f0f2e4ae5f3c807cf0904605408e319dcaac
+        with:
+          artifacts: "hvilken-${{ matrix.os }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
