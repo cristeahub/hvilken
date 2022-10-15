@@ -1,0 +1,21 @@
+name: Swift
+
+on: [push]
+
+jobs:
+  build:
+    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        swift: ["5.7"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: fwal/setup-swift@7c49efc544dba93085c0106072e0576a1f743110
+        with:
+          swift-version: ${{ matrix.swift }}
+      - uses: actions/checkout@v3
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
